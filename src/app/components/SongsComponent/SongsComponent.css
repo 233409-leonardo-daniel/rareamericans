@@ -1,0 +1,73 @@
+/* Contenedor principal para canciones y letras */
+.songs-container {
+  display: flex; /* Hace que los hijos estén uno al lado del otro */
+  align-items: flex-start; /* Alinea al inicio en el eje vertical */
+  gap: 20px; /* Espacio entre canciones y letras */
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor de canciones */
+.songs {
+  flex: 2; /* Ocupa más espacio que .lyrics */
+}
+
+.songs h2 {
+  text-align: center;
+}
+
+.songs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.songs li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.songs .song-cover {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.songs .song-info {
+  display: flex;
+  align-items: center;
+}
+
+.songs .play-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.songs .song-title {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+/* Contenedor de letras */
+.lyrics {
+  flex: 1; /* Ocupa menos espacio que .songs */
+  background-color: #333;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+  left: -20px;
+}
+
+.lyrics h3 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+}

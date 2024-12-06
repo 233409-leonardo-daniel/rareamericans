@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="video-container">
+    <h1>Brittle Bones Nicky</h1>
+    <div class="main-video">
+      <video controls>
+        <source src="assets/Rare Americans - Brittle Bones Nicky (Official Music Video) - Rare Americans (1080p, h264, youtube).mp4" type="video/mp4" />
+        Tu navegador no soporta el elemento de video.
+      </video>
+    </div>
+    <h3>Rare Americans - Brittle Bones Nicky (Official Music Video)</h3>
+    <div class="video-list">
+      <div class="video-item" *ngFor="let video of videos">
+        <video controls>
+          <source [src]="video.src" type="video/mp4" />
+          Tu navegador no soporta el elemento de video.
+        </video>
+        <p>{{ video.title }}</p>
+      </div>
+    </div>
+  </div>
+<app-footer></app-footer>

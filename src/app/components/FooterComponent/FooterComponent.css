@@ -1,0 +1,24 @@
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Estilo de los íconos */
+.social-icons img {
+  width: 30px; /* Ajusta el ancho de los íconos */
+  height: 30px; /* Ajusta el alto de los íconos */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto hover para íconos */
+.social-icons img:hover {
+  transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}

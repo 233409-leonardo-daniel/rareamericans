@@ -1,0 +1,10 @@
+<div class="stories">
+  <h2 class="title">Historias en los videos</h2>
+  <div class="videos">
+    <div *ngFor="let video of videos" class="video-card">
+      <img [src]="video.src" [alt]="video.title" class="video-image" />
+      <p class="video-title">{{ video.title }}</p>
+      <button class="video-button" [routerLink]="'/video'">Ver más</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+/* Contenedor principal */
+.historia-container {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Título principal */
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ffc107;
+  font-style: italic;
+}
+
+/* Descripción */
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Subtítulo */
+.subtitle {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Contenedor de integrantes */
+.integrantes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards para cada integrante */
+.integrante.card {
+  background-color: #444;
+  border: 1px solid #555;
+  text-align: center;
+  padding: 15px;
+  width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.integrante.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen dentro de las cards */
+.integrante img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Nombre dentro de las cards */
+.integrante .name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffc107;
+  margin: 0;
+}

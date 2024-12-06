@@ -1,0 +1,20 @@
+.header {
+  position: relative;
+  width: 100%; /* Toma todo el ancho del contenedor */
+  height: 200px; /* Altura fija para el logo */
+  overflow: hidden; /* Evita que el contenido se salga del contenedor */
+}
+
+.logo {
+  width: 100%; /* Logo abarca todo el ancho */
+  height: 100%; /* Logo se ajusta a la altura del contenedor */
+  object-fit: cover; /* Asegura que la imagen se escale correctamente */
+}
+
+.characters {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  gap: 10px;
+}

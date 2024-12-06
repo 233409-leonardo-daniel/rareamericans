@@ -1,0 +1,18 @@
+<div class="songs-container">
+  <div class="songs">
+    <h2>Canciones más escuchadas</h2>
+    <ul>
+      <li *ngFor="let song of songs" (click)="selectSong(song)">
+        <img [src]="song.image" alt="{{ song.title }} cover" class="song-cover" />
+        <div class="song-info">
+          <button class="play-button">▶</button>
+          <span class="song-title">{{ song.title }}</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="lyrics" *ngIf="selectedSong">
+    <h3>{{ selectedSong?.title }}</h3>
+    <p>{{ selectedSong?.lyrics }}</p>
+  </div>
+</div>

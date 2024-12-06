@@ -1,0 +1,75 @@
+/* Contenedor principal */
+.stories {
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Título */
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de videos */
+.videos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card de video */
+.video-card {
+  background-color: #222;
+  border: 2px solid #444;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Imagen del video */
+.video-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Título del video */
+.video-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+/* Botón */
+.video-button {
+  background-color: #ffc107;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.video-button:hover {
+  background-color: #e0a800;
+}
